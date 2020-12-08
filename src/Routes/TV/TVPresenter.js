@@ -32,6 +32,7 @@ const TVPresenter = ({ topRated, popular, airingToday, loading, error }) =>
       {error && <Message text={error} />}
     </Container>
   );
+
 TVPresenter.propTypes = {
   topRated: PropTypes.array,
   popular: PropTypes.array,
