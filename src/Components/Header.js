@@ -1,10 +1,11 @@
 import React from "react";
-import {Link, withRouter} from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
 import styled from "styled-components";
 
 const Header = styled.header`
   color: white;
   position: fixed;
+  z-index: 10;
   top: 0;
   left: 0;
   width: 100%;
@@ -36,7 +37,7 @@ const SLink = styled(Link)`
   justify-content: center;
 `;
 
-export default withRouter(({location: {pathname}}) => (
+export default withRouter(({ location: { pathname } }) => (
   <Header>
     <List>
       <Item current={pathname === "/"}>
